@@ -1,0 +1,43 @@
+ALGORITHM count_letters
+VAR
+    str : STRING:= 'coding';
+    count : INTEGER := 0;
+BEGIN
+    Read(str);
+    FOR i FROM 1 TO LENGTH(str) DO
+        IF str[i] = 'a' THEN
+            count := count + 1;
+        END_IF
+    END_FOR
+    write(count);
+END
+
+
+ALGORITHM count_vowels
+VAR
+    str1 : STRING := 'programming';
+    count1 : INTEGER := 0;
+BEGIN
+    Read(str1);
+    FOR i FROM 1 TO LENGTH(str1) DO
+        IF str1[i] = 'a' OR str1[i] = 'e' OR str1[i] = 'i' OR str1[i] = 'o' OR str1[i] = 'u' THEN
+            count1 := count1 + 1;
+        END_IF
+    END_FOR
+    write(count1);
+END
+
+ALGORITHM word_counting
+VAR
+    str2: STRING := 'GO MY CODE';
+    count2: INTEGER := 0;
+BEGIN
+    Read(str2);
+    For i FROM 1 TO LENGTH(str2) DO 
+        IF str2[i] = ' ' THEN
+            count2 := count2 + 1;
+        END_IF  
+    END_FOR
+    count2 := count2 + 1; // To account for the last word
+    Write(count2);
+END
