@@ -32,7 +32,7 @@ function PageHeader() {
   return (
     <Container className="text-center my-5">
       <h1 className="display-3">Welcome to My Page</h1>
-      <p className="lead">Ever, Welcome to My Page</p>
+      <p className="lead">We Bring Great Deal to You</p>
     </Container>
   );
 }
