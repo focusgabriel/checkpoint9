@@ -7,6 +7,8 @@ import { Container } from "react-bootstrap";
 
 function Navapp() {
     return (
+
+      <div className="App">
         <Nav fill variant="tabs" defaultActiveKey="/home">
         <Nav.Item>
             <Nav.Link href="/home">Active</Nav.Link>
@@ -23,6 +25,7 @@ function Navapp() {
             </Nav.Link>
         </Nav.Item>
         </Nav>
+      </div>
     );
 }
 
