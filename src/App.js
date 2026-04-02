@@ -4,6 +4,7 @@ import Card from 'react-bootstrap/Card';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import { Container } from "react-bootstrap";
+import image from "./images/image.png";
 
 function Navapp() {
     return (
@@ -46,7 +47,7 @@ function GridExample() {
       {Array.from({ length: 4 }).map((_, idx) => (
         <Col key={idx}>
           <Card>
-            <Card.Img variant="top" src="holder.js/100px160" />
+            <Card.Img variant="top" src={image} />
             <Card.Body>
               <Card.Title>Card title</Card.Title>
               <Card.Text>
