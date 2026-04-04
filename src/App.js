@@ -8,7 +8,6 @@ import image from "./images/image.png";
 
 function Navapp() {
     return (
-
       <div className="App">
         <Nav fill variant="tabs" defaultActiveKey="/home">
         <Nav.Item>
